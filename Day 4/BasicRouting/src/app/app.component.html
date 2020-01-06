@@ -1,0 +1,18 @@
+<h1>My WebApp</h1>
+
+<div>
+    <a routerLinkActive="activeClassName" routerLink="/home">Home</a> |
+    <a routerLinkActive="activeClassName" routerLink="/about">About</a> | 
+    <a routerLinkActive="activeClassName" routerLink="/kefel">Kefel</a>  | 
+    <a routerLinkActive="activeClassName" routerLink="/kefel-result/101/99">101 * 99</a> 
+</div>
+<div>
+    <button (click)="navigateTo('home')">Go To Home</button>
+    <button (click)="navigateTo('about')">Go To About</button>
+</div>
+<marquee>Text metayel al masach</marquee>
+<router-outlet></router-outlet>
+
+<div>
+    &copy; Shimon Dahan! shimond@any-techs.co.il
+</div>

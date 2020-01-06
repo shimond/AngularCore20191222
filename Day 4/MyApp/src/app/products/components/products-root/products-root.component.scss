@@ -1,0 +1,9 @@
+.root{
+    height: 60vh;
+    background-color: orange;
+
+    .child{
+        min-height: 40vh;
+        background-color: paleturquoise;
+    }
+}

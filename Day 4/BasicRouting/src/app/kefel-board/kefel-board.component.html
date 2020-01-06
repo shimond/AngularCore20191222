@@ -1,0 +1,10 @@
+<div class="main-grid">
+    <div class="grid-item" *ngFor="let item of values" [routerLink]="['/kefel-result', item.x, item.y]">
+        {{item.x}} * {{item.y}}
+        <div>
+            <button (click)="navigateWithParam(item.x, item.y, '+')">+</button>
+            <button (click)="navigateWithParam(item.x, item.y, '-')">-</button>
+            <button (click)="navigateWithParam(item.x, item.y, '*')">/</button>
+        </div>
+    </div>
+</div>
