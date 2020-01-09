@@ -1,0 +1,16 @@
+<h2 *ngIf="isNotAllowed$ | async"> Now allowed....</h2>
+<form [formGroup]="loginForm" (ngSubmit)="login()" *ngIf="!isAuth(); else isAutTemplate">
+    <div>
+        <input placeholder="UserName" formControlName="un" />
+    </div>
+    <div>
+        <input placeholder="Password" type="password" formControlName="password">
+    </div>
+    <div>
+        <button [disabled]="loginForm.invalid">Login</button>
+    </div>
+</form>
+
+<ng-template #isAutTemplate>
+    <button (click)="logout()">Logout</button>
+</ng-template>
